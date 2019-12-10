@@ -1,10 +1,18 @@
-# TO-DO: complete the helpe function below to merge 2 sorted arrays
+# TO-DO: complete the helper function below to merge 2 sorted arrays
 def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
     # TO-DO
-    
+    for i in range(0, len(arrA)):
+        merged_arr[i] = arrA[i]
+    for i in range(0, len(arrB)):
+        merged_arr[i + len(arrA)] = arrB[i]
     return merged_arr
+
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [6, 7, 8, 9, 10]
+
+print(merge(arr1, arr2))
 
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
