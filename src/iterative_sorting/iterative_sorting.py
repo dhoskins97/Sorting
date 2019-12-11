@@ -1,3 +1,4 @@
+import random
 # TO-DO: Complete the selection_sort() function below 
 def selection_sort( arr ):
     # initialize the dynamic starting point at the first index
@@ -23,6 +24,10 @@ def selection_sort( arr ):
         DSP += 1
 
     return arr
+
+
+
+
 
 
 
@@ -56,7 +61,9 @@ def bubble_sort( arr ):
             
     return arr
 
-
+bigArray = list(range(1, 5000))
+random.shuffle(bigArray)
+print(bubble_sort(bigArray))
 
 
 # STRETCH: implement the Count Sort function below
